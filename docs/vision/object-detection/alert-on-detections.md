@@ -127,13 +127,13 @@ Add a trigger to send alerts when filtered images sync:
 
    {{<imgproc src="/tutorials/helmet/trigger.png" resize="x600" style="width: 500px" declaredimensions=true alt="The trigger configured with 'Data has been synced to the cloud' as the type and 'Binary (image)' as the data type." class="shadow imgzoom" >}}
 
-5. Add notification methods. The following options live in the **ALERT OPTIONS** and **WEBHOOKS** sections of the trigger card:
+5. Add notification methods. The following options live in the **EMAIL** and **WEBHOOK** sections of the trigger card:
 
    **Email specific addresses**: Toggle on and add email addresses. Each row has its own **Alert frequency**.
 
    **Email all machine owners**: Toggle on. Set the **Alert frequency** for the all-owners row.
 
-   **Webhook**: In the **WEBHOOKS** section click **Add Webhook**, enter the URL of your cloud function, and implement logic to process the [webhook payload](/reference/triggers/#webhook-attributes). Use this to integrate with external services like Twilio, PagerDuty, or Zapier.
+   **Webhook**: In the **WEBHOOK** section click **Add webhook**, enter the URL of your cloud function, and implement logic to process the [webhook payload](/reference/triggers/#webhook-attributes). Use this to integrate with external services like Twilio, PagerDuty, or Zapier.
 
 6. Set each **Alert frequency** you enabled (for example, maximum one alert per hour).
 7. Click **Save**.
